@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EED11DBE26A200200004BB40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED11DBD26A200200004BB40 /* AppDelegate.swift */; };
+		EED11DC026A200200004BB40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED11DBF26A200200004BB40 /* SceneDelegate.swift */; };
+		EED11DC226A200200004BB40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED11DC126A200200004BB40 /* ViewController.swift */; };
+		EED11DC526A200200004BB40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED11DC326A200200004BB40 /* Main.storyboard */; };
+		EED11DC726A200210004BB40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED11DC626A200210004BB40 /* Assets.xcassets */; };
+		EED11DCA26A200210004BB40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED11DC826A200210004BB40 /* LaunchScreen.storyboard */; };
+		EED11DD526A200210004BB40 /* ZealotDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED11DD426A200210004BB40 /* ZealotDemoTests.swift */; };
+		EED11DE026A200210004BB40 /* ZealotDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED11DDF26A200210004BB40 /* ZealotDemoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EED11DD126A200210004BB40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EED11DB226A200200004BB40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EED11DB926A200200004BB40;
+			remoteInfo = ZealotDemo;
+		};
+		EED11DDC26A200210004BB40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EED11DB226A200200004BB40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EED11DB926A200200004BB40;
+			remoteInfo = ZealotDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EED11DBA26A200200004BB40 /* ZealotDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZealotDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED11DBD26A200200004BB40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EED11DBF26A200200004BB40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EED11DC126A200200004BB40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EED11DC426A200200004BB40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EED11DC626A200210004BB40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EED11DC926A200210004BB40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EED11DCB26A200210004BB40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EED11DD026A200210004BB40 /* ZealotDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZealotDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED11DD426A200210004BB40 /* ZealotDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZealotDemoTests.swift; sourceTree = "<group>"; };
+		EED11DD626A200210004BB40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EED11DDB26A200210004BB40 /* ZealotDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZealotDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED11DDF26A200210004BB40 /* ZealotDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZealotDemoUITests.swift; sourceTree = "<group>"; };
+		EED11DE126A200210004BB40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EED11DB726A200200004BB40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED11DCD26A200210004BB40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED11DD826A200210004BB40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EED11DB126A200200004BB40 = {
+			isa = PBXGroup;
+			children = (
+				EED11DBC26A200200004BB40 /* ZealotDemo */,
+				EED11DD326A200210004BB40 /* ZealotDemoTests */,
+				EED11DDE26A200210004BB40 /* ZealotDemoUITests */,
+				EED11DBB26A200200004BB40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EED11DBB26A200200004BB40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EED11DBA26A200200004BB40 /* ZealotDemo.app */,
+				EED11DD026A200210004BB40 /* ZealotDemoTests.xctest */,
+				EED11DDB26A200210004BB40 /* ZealotDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EED11DBC26A200200004BB40 /* ZealotDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EED11DBD26A200200004BB40 /* AppDelegate.swift */,
+				EED11DBF26A200200004BB40 /* SceneDelegate.swift */,
+				EED11DC126A200200004BB40 /* ViewController.swift */,
+				EED11DC326A200200004BB40 /* Main.storyboard */,
+				EED11DC626A200210004BB40 /* Assets.xcassets */,
+				EED11DC826A200210004BB40 /* LaunchScreen.storyboard */,
+				EED11DCB26A200210004BB40 /* Info.plist */,
+			);
+			path = ZealotDemo;
+			sourceTree = "<group>";
+		};
+		EED11DD326A200210004BB40 /* ZealotDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EED11DD426A200210004BB40 /* ZealotDemoTests.swift */,
+				EED11DD626A200210004BB40 /* Info.plist */,
+			);
+			path = ZealotDemoTests;
+			sourceTree = "<group>";
+		};
+		EED11DDE26A200210004BB40 /* ZealotDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EED11DDF26A200210004BB40 /* ZealotDemoUITests.swift */,
+				EED11DE126A200210004BB40 /* Info.plist */,
+			);
+			path = ZealotDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EED11DB926A200200004BB40 /* ZealotDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED11DE426A200210004BB40 /* Build configuration list for PBXNativeTarget "ZealotDemo" */;
+			buildPhases = (
+				EED11DB626A200200004BB40 /* Sources */,
+				EED11DB726A200200004BB40 /* Frameworks */,
+				EED11DB826A200200004BB40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZealotDemo;
+			productName = ZealotDemo;
+			productReference = EED11DBA26A200200004BB40 /* ZealotDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EED11DCF26A200210004BB40 /* ZealotDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED11DE726A200210004BB40 /* Build configuration list for PBXNativeTarget "ZealotDemoTests" */;
+			buildPhases = (
+				EED11DCC26A200210004BB40 /* Sources */,
+				EED11DCD26A200210004BB40 /* Frameworks */,
+				EED11DCE26A200210004BB40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EED11DD226A200210004BB40 /* PBXTargetDependency */,
+			);
+			name = ZealotDemoTests;
+			productName = ZealotDemoTests;
+			productReference = EED11DD026A200210004BB40 /* ZealotDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EED11DDA26A200210004BB40 /* ZealotDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED11DEA26A200210004BB40 /* Build configuration list for PBXNativeTarget "ZealotDemoUITests" */;
+			buildPhases = (
+				EED11DD726A200210004BB40 /* Sources */,
+				EED11DD826A200210004BB40 /* Frameworks */,
+				EED11DD926A200210004BB40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EED11DDD26A200210004BB40 /* PBXTargetDependency */,
+			);
+			name = ZealotDemoUITests;
+			productName = ZealotDemoUITests;
+			productReference = EED11DDB26A200210004BB40 /* ZealotDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EED11DB226A200200004BB40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					EED11DB926A200200004BB40 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					EED11DCF26A200210004BB40 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = EED11DB926A200200004BB40;
+					};
+					EED11DDA26A200210004BB40 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = EED11DB926A200200004BB40;
+					};
+				};
+			};
+			buildConfigurationList = EED11DB526A200200004BB40 /* Build configuration list for PBXProject "ZealotDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EED11DB126A200200004BB40;
+			productRefGroup = EED11DBB26A200200004BB40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EED11DB926A200200004BB40 /* ZealotDemo */,
+				EED11DCF26A200210004BB40 /* ZealotDemoTests */,
+				EED11DDA26A200210004BB40 /* ZealotDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EED11DB826A200200004BB40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED11DCA26A200210004BB40 /* LaunchScreen.storyboard in Resources */,
+				EED11DC726A200210004BB40 /* Assets.xcassets in Resources */,
+				EED11DC526A200200004BB40 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED11DCE26A200210004BB40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED11DD926A200210004BB40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EED11DB626A200200004BB40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED11DC226A200200004BB40 /* ViewController.swift in Sources */,
+				EED11DBE26A200200004BB40 /* AppDelegate.swift in Sources */,
+				EED11DC026A200200004BB40 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED11DCC26A200210004BB40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED11DD526A200210004BB40 /* ZealotDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED11DD726A200210004BB40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED11DE026A200210004BB40 /* ZealotDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EED11DD226A200210004BB40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EED11DB926A200200004BB40 /* ZealotDemo */;
+			targetProxy = EED11DD126A200210004BB40 /* PBXContainerItemProxy */;
+		};
+		EED11DDD26A200210004BB40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EED11DB926A200200004BB40 /* ZealotDemo */;
+			targetProxy = EED11DDC26A200210004BB40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EED11DC326A200200004BB40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EED11DC426A200200004BB40 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EED11DC826A200210004BB40 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EED11DC926A200210004BB40 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EED11DE226A200210004BB40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EED11DE326A200210004BB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EED11DE526A200210004BB40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZealotDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mx.ZealotDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EED11DE626A200210004BB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZealotDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mx.ZealotDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EED11DE826A200210004BB40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZealotDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mx.ZealotDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZealotDemo.app/ZealotDemo";
+			};
+			name = Debug;
+		};
+		EED11DE926A200210004BB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZealotDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mx.ZealotDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZealotDemo.app/ZealotDemo";
+			};
+			name = Release;
+		};
+		EED11DEB26A200210004BB40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZealotDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mx.ZealotDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZealotDemo;
+			};
+			name = Debug;
+		};
+		EED11DEC26A200210004BB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZealotDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mx.ZealotDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZealotDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EED11DB526A200200004BB40 /* Build configuration list for PBXProject "ZealotDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED11DE226A200210004BB40 /* Debug */,
+				EED11DE326A200210004BB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED11DE426A200210004BB40 /* Build configuration list for PBXNativeTarget "ZealotDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED11DE526A200210004BB40 /* Debug */,
+				EED11DE626A200210004BB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED11DE726A200210004BB40 /* Build configuration list for PBXNativeTarget "ZealotDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED11DE826A200210004BB40 /* Debug */,
+				EED11DE926A200210004BB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED11DEA26A200210004BB40 /* Build configuration list for PBXNativeTarget "ZealotDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED11DEB26A200210004BB40 /* Debug */,
+				EED11DEC26A200210004BB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EED11DB226A200200004BB40 /* Project object */;
+}
