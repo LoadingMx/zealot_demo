@@ -1,0 +1,71 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Description of what the lane does"
+  lane :custom_lane do
+    # add actions here: https://docs.fastlane.tools/actions
+  end
+
+  lane :test do
+    increment_build_number
+    version_number = get_version_number
+    outputName = "zealot_#{version_number}_#{Time.now.strftime("%Y-%m-%d-%H-%M")}"
+    build_app(
+      scheme: "ZealotDemo",
+      export_method: "development",
+      output_directory: "build",
+      output_name: outputName,
+      include_bitcode: true
+    )
+
+    ENV['ZEALOT_ENDPOINT'] = 'https://zealot.test'
+    ENV['ZEALOT_TOKEN'] = '320bacf980e20e7b058be2d77154dc53'
+    ENV['ZEALOT_CHANNEL_KEY'] = 'e866756a763515857c1671a431a1179b'
+  
+    # 自动上传 App 和调试文件
+    zealot(
+      verify_ssl: false
+    )
+    zealot_debug_file(
+      verify_ssl: false
+    )
+
+
+    # zealot(
+    #   endpoint: 'https://zealot.test',
+    #   token: '320bacf980e20e7b058be2d77154dc53',
+    #   channel_key: 'e866756a763515857c1671a431a1179b',
+    #   verify_ssl: false,
+    #   file: "./build/#{outputName}.ipa"
+    # )
+  end
+
+
+  lane :upload_app do
+
+    # outputName = "zealot_#{version_number}_#{Time.now.strftime("%Y-%m-%d-%H-%M")}"
+    outputName = "./build/zealot_1.0_2021-07-18-19-09.ipa"
+    zealot(
+      endpoint: 'https://zealot.test',
+      token: '320bacf980e20e7b058be2d77154dc53',
+      channel_key: 'e866756a763515857c1671a431a1179b',
+      verify_ssl: false,
+      file: "#{outputName}"
+    )
+  end
+end
